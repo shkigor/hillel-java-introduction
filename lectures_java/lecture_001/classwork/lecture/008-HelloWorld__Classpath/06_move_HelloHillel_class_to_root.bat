@@ -1,0 +1,1 @@
+move bin\HelloHillel.class .
