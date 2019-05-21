@@ -38,6 +38,8 @@ public class Test {
         System.out.println(d);
 
         testByte();
+        testShort();
+        testInt();
     }
 
     /**
@@ -46,7 +48,7 @@ public class Test {
      * Переменные типа byte часто используются при работе с потоком данных из сети или файла,
      * а также при работе с необработанными двоичными данными или в массивах для экономии памяти.
      */
-    public static void testByte() {
+    private static void testByte() {
         System.out.println("--- testByte method ---");
         byte byteVar1 = 0, byteVar2 = 1, byteVar3 = 2; // объявили и проинициализировали сразу три переменные
         byte c, a, t; // объявили сразу три переменные
@@ -67,4 +69,65 @@ public class Test {
         System.out.println(x);
 
     }
+
+    /**
+     * Тип short - 16-битовый тип в диапазоне от -32768 до 32767. Используется очень редко.
+     */
+    private static void testShort() {
+        System.out.println("--- testShort method ---");
+
+        // В арифметических выражениях с переменными типа short вычисления выполняются как с типом int,
+        // т.е. с помощью 32-битовой арифметики, а полученный результат будет 32-битовым. Например, такой код не пройдёт.
+        // накорми кота
+        short fishNumber = 3; // три рыбки
+        short beefNumber = 2; // два кусочка говядины
+        short breakfast = 0;
+        // Java будет ругаться, так как итоговый результат не может быть short.
+        // breakfast = fishNumber + beefNumber; // завтрак чемпиона
+
+        // Как вариант, вам нужно преобразовать результат снова в 16-битовое число.
+        breakfast = (short) (fishNumber + beefNumber); // завтрак чемпиона
+
+        // строку с числом в тип short можно через метод parseShort(String)
+        short x = Short.parseShort("100");
+    }
+
+    /**
+     * int - это 32-битовый тип, имеющий диапазон допустимых значений от -2147483648 до 2147483647 (около двух миллиардов).
+     */
+    private static void testInt() {
+        // Зададим себе вопрос, насколько большим может быть целое число типа int?
+        int x = 2;
+//        int x = 3;
+        System.out.println(x);
+        x *= x;
+        System.out.println(x);
+        x *= x;
+        System.out.println(x);
+        x *= x;
+        System.out.println(x);
+        x *= x;
+        System.out.println(x);
+        x *= x;
+        System.out.println(x);
+        x *= x;
+        System.out.println(x);
+        x *= x;
+        System.out.println(x);
+        x *= x;
+        System.out.println(x);
+
+
+        // При делении целочисленных чисел остаток отбрасывается
+        //        6 / 3 = 2
+        //        7 / 3 = 2
+        //        8 / 3 = 2
+        //        9 / 3 = 3
+        System.out.println("Деление целочисленных чисел");
+        System.out.println(6/3);
+        System.out.println(7/3);
+        System.out.println(8/3);
+        System.out.println(9/3);
+    }
+
 }
