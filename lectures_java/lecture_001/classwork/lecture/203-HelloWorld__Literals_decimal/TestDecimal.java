@@ -1,6 +1,6 @@
 // Java program to illustrate the application of 
 // floating-point literals 
-public class Test { 
+public class TestDecimal { 
 	public static void main(String[] args) 
 	{ 
 		float a = 101.230f; // decimal-form literal 

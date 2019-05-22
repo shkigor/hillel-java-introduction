@@ -11,35 +11,12 @@
 */
 
 // Java program to illustrate the application of Integer literals
-public class Test {
+public class TestIntegral {
     public static void main(String[] args) {
-        // Decimal literals (Base 10) : In this form the allowed digits are 0-9.
-        int a = 101;
-
-        // в JDK 7 можно вставл€ть символы подчЄркивани€ дл€ облегчени€ чтени€ больших числовых литералов
-        int x = 123_456_789;
-
-        // Octal literals (Base 8) : In this form the allowed digits are 0-7.
-        int b = 0100; // The octal number should be prefix with 0.
-        // 1*8^2 + 0*8^1 + 0*8^0
-
-        // Hexa-decimal literals (Base 16) : In this form the allowed digits are 0-9 and characters are a-f.
-        int c = 0xFace; // We can use both uppercase and lowercase characters. The hexa-decimal number should be prefix with 0X or 0x.
-        // 15*16^3 + 10*16^2 + 12*16^1 + 14*16^0
-
-        // ¬ JDK 7 можно использовать целочисленные литералы в двоичной системе. ƒл€ этого нужно использовать префикс 0b или 0B
-        int d = 0b1111;
-        // 1*2^3 + 1*2^2 + 1*2^1 + 1*2^0
-
-        System.out.println(a);
-        System.out.println(x);
-        System.out.println(b);
-        System.out.println(c);
-        System.out.println(d);
-
         testByte();
         testShort();
         testInt();
+        testLong();
     }
 
     /**
@@ -50,6 +27,7 @@ public class Test {
      */
     private static void testByte() {
         System.out.println("--- testByte method ---");
+
         byte byteVar1 = 0, byteVar2 = 1, byteVar3 = 2; // объ€вили и проинициализировали сразу три переменные
         byte c, a, t; // объ€вили сразу три переменные
         c = 20;
@@ -88,7 +66,8 @@ public class Test {
         //  ак вариант, вам нужно преобразовать результат снова в 16-битовое число.
         breakfast = (short) (fishNumber + beefNumber); // завтрак чемпиона
 
-        // строку с числом в тип short можно через метод parseShort(String)
+        // —троку с числом перевести в данный тип можно через метод parseShort(String):
+        //  ласс Short €вл€етс€ оболочкой дл€ данного типа.
         short x = Short.parseShort("100");
     }
 
@@ -96,11 +75,36 @@ public class Test {
      * int - это 32-битовый тип, имеющий диапазон допустимых значений от -2147483648 до 2147483647 (около двух миллиардов).
      */
     private static void testInt() {
-        // «ададим себе вопрос, насколько большим может быть целое число типа int?
+        System.out.println("--- testInt method ---");
+        // Decimal literals (Base 10) : In this form the allowed digits are 0-9.
+        int a = 101;
+
+        // в JDK 7 можно вставл€ть символы подчЄркивани€ дл€ облегчени€ чтени€ больших числовых литералов
+        int easyRead = 123_456_789;
+
+        // Octal literals (Base 8) : In this form the allowed digits are 0-7.
+        int b = 0100; // The octal number should be prefix with 0.
+        // 1*8^2 + 0*8^1 + 0*8^0
+
+        // Hexa-decimal literals (Base 16) : In this form the allowed digits are 0-9 and characters are a-f.
+        int c = 0xFace; // We can use both uppercase and lowercase characters. The hexa-decimal number should be prefix with 0X or 0x.
+        // 15*16^3 + 10*16^2 + 12*16^1 + 14*16^0
+
+        // ¬ JDK 7 можно использовать целочисленные литералы в двоичной системе. ƒл€ этого нужно использовать префикс 0b или 0B
+        int d = 0b1111;
+        // 1*2^3 + 1*2^2 + 1*2^1 + 1*2^0
+
+        System.out.println(a);
+        System.out.println(easyRead);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
+
+        System.out.println("\n *** «ададим себе вопрос, насколько большим может быть целое число типа int?");
         int x = 2;
 //        int x = 3;
         System.out.println(x);
-        x *= x;
+        x *= x; // x = x * x
         System.out.println(x);
         x *= x;
         System.out.println(x);
@@ -123,11 +127,36 @@ public class Test {
         //        7 / 3 = 2
         //        8 / 3 = 2
         //        9 / 3 = 3
-        System.out.println("ƒеление целочисленных чисел");
-        System.out.println(6/3);
-        System.out.println(7/3);
-        System.out.println(8/3);
-        System.out.println(9/3);
+        System.out.println("\n *** ƒеление целочисленных чисел");
+        System.out.println(6 / 3);
+        System.out.println(7 / 3);
+        System.out.println(8 / 3);
+        System.out.println(9 / 3);
+
+        System.out.println("\n *** ≈сли нужен узнать остаток от делени€, то используйте оператор % (оператор делени€ по модулю)");
+        System.out.println(6 % 3);
+        System.out.println(7 % 3);
+        System.out.println(8 % 3);
+        System.out.println(9 % 3);
+
+        // —троку с числом перевести в данный тип можно через метод parseInt(String):
+        //  ласс Integer €вл€етс€ оболочкой дл€ данного типа.
+        String mString = "42"; // строка
+        int mInt = Integer.parseInt(mString);
+    }
+
+    /**
+     * “ип long - это 64-битный тип со знаком, используемый в тех случа€х, когда используетс€ очень большое значение,
+     * которое не способен хранить тип int.
+     */
+    private static void testLong() {
+        System.out.println("--- testLong method ---");
+
+        // ƒл€ обозначени€ числа типа long можно использовать символы l или L
+        long night = 101l; // не рекомендуетс€ использовать маленькую букву l, так как ее можно спутать с 1
+        long day = 101L;
+        System.out.println(night);
+        System.out.println(day);
     }
 
 }
