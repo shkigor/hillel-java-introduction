@@ -1,6 +1,6 @@
 package academy.learnprogramming;
 
-public class Main {
+public class FloatDouble {
 
     public static void main(String[] args) {
 
