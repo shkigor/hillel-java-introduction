@@ -9,4 +9,5 @@ out/
 .project
 .settings
 .classpath
-src/app/node_modules
+src/app/node_modules/
+my_section/.vscode/
