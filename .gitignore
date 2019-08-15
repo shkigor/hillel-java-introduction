@@ -10,4 +10,5 @@ out/
 .settings
 .classpath
 src/app/node_modules/
+**/.vscode/**
 my_section/.vscode/

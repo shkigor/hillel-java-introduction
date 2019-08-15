@@ -1,7 +1,7 @@
 /**
  *  What are variables?
  */
-public class Hello {
+public class HelloOperator {
     public static void main(String[] args) {
 
         System.out.println("Hello World!");
