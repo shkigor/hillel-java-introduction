@@ -42,9 +42,23 @@ public class FloatDouble {
         System.out.println(pi);
         System.out.println(anotherNumber);
 
+        double trashDouble = Double.valueOf("4699.9") * 100;
+        int trashInt = (int) (Double.valueOf("4699.9") * 100);
+        System.out.println("4699.9 * 100 = " + trashDouble);
+        System.out.println("4699.9 * 100 = " + trashInt);
+
 
 // https://stackoverflow.com/questions/14137989/java-division-by-zero-doesnt-throw-an-arithmeticexception-why
-        
+        double positive_infinity = 12.0 / 0; // Специальное значение Infinity
+        System.out.println(positive_infinity);
+
+        double negative_infinity = -15.0 / 0;
+        System.out.println(positive_infinity + negative_infinity); //return NaN
+        System.out.println(Double.isNaN(positive_infinity + negative_infinity)); //return true
+
+        double sqrt = Math.sqrt(-4); //NaN
+        System.out.println(sqrt);
+
         
     }
 }

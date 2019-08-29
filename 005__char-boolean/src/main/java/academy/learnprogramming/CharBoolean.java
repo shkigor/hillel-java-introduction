@@ -13,10 +13,10 @@ public class CharBoolean {
     char myCopyrightChar = '\u00A9';
 
     System.out.println(symA);
+    System.out.println("symB = " + symB);
     System.out.println(myUnicodeCharCode);
     System.out.println(myUnicodeCharA);
     System.out.println(myCopyrightChar);
-    System.out.println("symB = " + symB);
 
     System.out.println((int) symA);
     System.out.println(Integer.toHexString((int) symA));
