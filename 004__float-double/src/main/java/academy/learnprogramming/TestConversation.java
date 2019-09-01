@@ -9,20 +9,20 @@ public class TestConversation {
         // byte -> short -> int -> long -> float -> double
         //automatic type conversion
 
-        byte _byte = 100;
-        short _short = _byte;
-        int _int = _short;
-//        int _int = Integer.MAX_VALUE;
-        long _long = _int;
-        float _float = _long;
-        double _double = _float;
+        byte byteVal = 100;
+        short shortVal = byteVal;
+        int intVal = shortVal;
+//        int intVal = Integer.MAX_VALUE;
+        long longVal = Long.MAX_VALUE;
+        float floatVal = longVal;
+        double doubleVal = floatVal;
 
-        System.out.println("Byte value " + _byte);
-        System.out.println("Short value " + _short);
-        System.out.println("Int value " + _int);
-        System.out.println("Long value " + _long);
-        System.out.println("Float value " + _float);
-        System.out.println("Double value " + _double);
+        System.out.println("Byte value " + byteVal);
+        System.out.println("Short value " + shortVal);
+        System.out.println("Int value " + intVal);
+        System.out.println("Long value " + longVal);
+        System.out.println("Float value " + floatVal);
+        System.out.println("Double value " + doubleVal);
 
         //Java program to illustrate Conversion of int and double to byte
         byte b;
