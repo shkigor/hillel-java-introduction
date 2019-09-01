@@ -12,6 +12,7 @@ public class Operators {
         System.out.println("1 + 2 = " + result);
         int previousResult = result;
         System.out.println("previousResult =  " + previousResult);
+
         result = result - 1;    // 3 - 1 = 2
         System.out.println("3 - 1 = " + result);
         System.out.println("previousResult =  " + previousResult);
@@ -52,6 +53,17 @@ public class Operators {
         result -= 2;  // 10 - 2 = 8
         System.out.println("10 - 2 = " + result);
 
+        // Инкремент и декремент
+        int a = 1;
+        int b = 2;
+        int c = ++b; //префиксная форма
+        int d = a++; //постфиксная форме
+        c++;
+        System.out.print("a = " + a);
+        System.out.print("b = " + b);
+        System.out.print("c = " + c);
+        System.out.println("d = " + d);
+
         /*
          * Ternary Operator
          *
@@ -74,13 +86,13 @@ public class Operators {
 
         // Multiple operators
         boolean isFullAge = now - yearJohn >= fullAge; // true
-        System.out.println(isFullAge);
+        System.out.println("isFullAge = " + isFullAge);
 
         // Grouping
         int ageJohn = now - yearJohn;
         int ageMark = 35;
         int average = (ageJohn + ageMark) / 2;
-        System.out.println(average);
+        System.out.println("average = " + average);
 
         // Multiple assignments
         int x, y;
