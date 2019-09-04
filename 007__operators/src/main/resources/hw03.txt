@@ -102,3 +102,7 @@ https://vertex-academy.com/tutorials/ru/rabota-so-skannerom-v-java/
 масса человека = 106 кг, рост = 168 см.
 Индекс массы тела = 37,55 кг/м²
 
+
+Для вывода в консоль кг/м² использовать символ Unicode U+00B2
+https://unicode-table.com/ru/00B2/
+
