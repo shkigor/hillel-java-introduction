@@ -1,0 +1,104 @@
+ЧИТАЕМ:
+
+
+Основные операторы в Java
+https://elekt.tech/java/java_basics/basic_operators_in_java.html
+
+Операторы и выражения в Java. Часть 1 - Таблица приоритетов выполнения операторов Java
+http://pr0java.blogspot.com/2015/04/java_7.html
+
+Операторы и выражения в Java. Часть 2 – описание таблицы приоритетов операторов
+http://pr0java.blogspot.com/2015/04/java-2_24.html
+
+Класс String
+http://developer.alexanderklimov.ru/android/java/string.php
+
+Строки в Java (class java.lang.String)
+https://javarush.ru/groups/posts/645-stroki-v-java
+
+Работа со сканером в Java (ввод и вывод данных)
+https://vertex-academy.com/tutorials/ru/rabota-so-skannerom-v-java/
+
+
+ЗАДАЧА:
+1. Ознакомиться с методом Math.round() в интернете.
+
+Краткое знакомство:
+
+В пакете java.lang есть класс Math, а в этом классе есть метод округления числа с плавающей точкой до ближайшего целого числа Math.round()
+
+Пример работы метода Math.round():
+
+double number = 1.5;
+long rounded = Math.round(number);
+System.out.println("rounded= " + rounded);
+System.out.println("with 3.9= " + Math.round(3.9));
+System.out.println("with 4.5= " + Math.round(4.5));
+int sum = 45;
+int count = 10;
+// typecasting so result is double e.g. double / int -> double
+double average = (double) sum / count;
+long roundedAverage = Math.round(average);
+System.out.println("average= " + average);
+System.out.println("roundedAverage= " + roundedAverage);
+
+
+2. Напишите программу конвертации скорости км/ч в миль/ч
+
+Программа должна печатать в консоль округленное выражение после конвертации км/ч в миль/ч
+
+Например:
+
+1) Имеем скорость 1.5 км/ч
+
+  Результатом выполнения программы должно быть выведено в консоли:
+
+  1.5 км/ч = 1 ми/ч
+
+2) Имеем скорость 10.25 км/ч
+
+  Результатом выполнения программы должно быть выведено в консоли:
+
+  10.25 км/ч = 6 ми/ч
+
+3) Имеем скорость 25.42 км/ч
+
+  Результатом выполнения программы должно быть выведено в консоли:
+
+  25.42 км/ч = 16 ми/ч
+
+4) Имеем скорость 75.114 км/ч
+
+  Результатом выполнения программы должно быть выведено в консоли:
+
+  75.114 км/ч = 47 ми/ч
+
+Заметка: 1 миля в час - 1.609 километров в час
+
+
+
+1.609 - объявить как константу.
+
+Правильно именуем переменные, константы (идентификаторы)
+
+
+
+3. Напишите программу вычисления индекса массы тела
+
+https://ru.wikipedia.org/wiki/%D0%98%D0%BD%D0%B4%D0%B5%D0%BA%D1%81_%D0%BC%D0%B0%D1%81%D1%81%D1%8B_%D1%82%D0%B5%D0%BB%D0%B0
+
+
+В программе использовать класс Scanner
+
+Работа со сканером в Java (ввод и вывод данных)
+
+https://vertex-academy.com/tutorials/ru/rabota-so-skannerom-v-java/
+
+
+Для массы тела 106 кг и роста 168 см
+
+в консоле вывести следующее:
+
+масса человека = 106 кг, рост = 168 см.
+Индекс массы тела = 37,55 кг/м²
+
