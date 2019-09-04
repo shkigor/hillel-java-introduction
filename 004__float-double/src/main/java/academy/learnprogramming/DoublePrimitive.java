@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 public class DoublePrimitive {
     public static void main(String[] args) {
         // byte -> short -> int -> long -> float -> double
-        //automatic type conversion
+        // automatic type conversion
         byte byteVal = 100;
         short shortVal = byteVal;
         int intVal = shortVal;
@@ -22,23 +22,18 @@ public class DoublePrimitive {
         System.out.println("Double value " + doubleVal);
 
 
-//        // Java automatically promotes each byte, short, or char operand to int when evaluating an expression.
-//        // If one operand is a long, float or double the whole expression is promoted to long, float or double respectively.
-//
-//
-//        int intMaxValue = Integer.MAX_VALUE; //Integer.MAX_VALUE
+        // Java automatically promotes each byte, short, or char operand to int when evaluating an expression.
+        // If one operand is a long, float or double the whole expression is promoted to long, float or double respectively.
         int intMaxValue = 2147483647; //Integer.MAX_VALUE
-//        long longValue = 1 + intMaxValue;
-        long longValue = 1L + intMaxValue;
+        long longValue = 1 + intMaxValue; // Overflow
+//        long longValue = 1L + intMaxValue;
         System.out.println(longValue);
 
 
 
-
-
-
-
 // =================== Floating Point Precision (точность после запятой) ===================
+        double doubleValue = (double) 5 / 2;
+        System.out.println("double value = " + doubleValue);
         int myIntValue = 5 / 2;
         float myFloatValue = 5f / 2f;
         double myDoubleValue = 5d / 2d;
