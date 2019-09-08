@@ -48,6 +48,12 @@ public class IfThenElseStatement {
         }
 
         int newValue = 50;
+
+        // Difference between equals and assignment operators
+//        if (newValue = 50) { // result is the int value
+//            System.out.println("result is the int value");
+//        }
+
         if (newValue == 50) {
             System.out.println("This is true");
         }
@@ -58,7 +64,9 @@ public class IfThenElseStatement {
             System.out.println("This is not supposed to happen");
         }
 
-
+        if (isCar = true) { // (isCar = true) happy path and we don't have any error
+            System.out.println("This is not supposed to happen");
+        }
 
 
 
