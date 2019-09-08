@@ -1,18 +1,11 @@
-package academy.learnprogramming;
+package academy.learnprogramming.bodymassindex;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
 public class BodyMassIndex {
-    public static void main(String[] args) {
-        String namePetrov = "Petrov";
-        double weightPetrov = 106; // кг
-        double heightPetrov = 168; // см
-        double bmiPetrov = calculateBodyMassIndex(weightPetrov, heightPetrov / 100);
-        printResult(namePetrov, weightPetrov, heightPetrov, bmiPetrov);
-    }
 
-    private static void printResult(String namePetrov, double weight, double height, double bmi) {
+    public static void printResult(String namePetrov, double weight, double height, double bmi) {
         System.out.println(namePetrov + ": weight = " + weight + ", height = " + height);
         System.out.println("BMI = " + round(bmi, 2) + " (" + interpretation(bmi) + ")");
     }
