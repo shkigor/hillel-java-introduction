@@ -70,5 +70,8 @@ public class SwitchStatement {
                 System.out.println("Not sure");
         }
 
+        // в Java 12 switch вместо оператора стал выражением
+        // https://topjava.ru/blog/definitive-guide-to-switch-expressions-in-java-12
+
     }
 }
