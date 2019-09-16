@@ -1,5 +1,11 @@
 ЧИТАЕМ:
 
+Метод String.format
+https://javarush.ru/quests/lectures/questmultithreading.level02.lecture06
+
+ФОРМАТИРОВАНИЕ ЧИСЕЛ И ТЕКСТА В JAVA
+http://study-java.ru/uroki-java/formatirovanie-chisel-i-texta-v-java/
+
 Оператор switch
 http://developer.alexanderklimov.ru/android/java/switch.php
 
