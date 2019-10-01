@@ -1,0 +1,108 @@
+ЧИТАЕМ:
+
+Принципы инкапсуляции
+https://javarush.ru/groups/posts/1969-principih-inkapsuljacii
+
+Инкапсуляция
+http://java-course.ru/begin/incapsulation/
+
+Геттеры и сеттеры
+https://javarush.ru/groups/posts/1928-getterih-i-setterih
+
+Конструкторы классов
+https://javarush.ru/groups/posts/1391-konstruktorih-klassov-java-jdk-15
+
+
+Задание 1.
+
+Напишите класс с именем Person. Классу нужны три поля (переменные экземпляра) с именами firstName, lastName типа String и age типа int.
+
+Напишите следующие методы (методы экземпляра):
+    Метод с именем getFirstName без каких-либо параметров, он должен возвращать значение поля firstName.
+    Метод с именем getLastName без каких-либо параметров, он должен возвращать значение поля lastName.
+    Метод с именем getAge без каких-либо параметров, он должен возвращать значение поля age.
+    Метод с именем setFirstName с одним параметром типа String, ему необходимо установить значение поля firstName.
+    Метод с именем setLastName с одним параметром типа String, ему необходимо установить значение поля lastName.
+    Метод с именем setAge с одним параметром типа int, для него необходимо установить значение поля age.
+    Если параметр меньше 0 или больше 100, ему нужно установить значение поля возраста равным 0.
+    Метод с именем isTeen без каких-либо параметров, он должен возвращать true,
+    если значение поля age больше 12 и меньше 20, в противном случае возвращает false.
+    Метод с именем getFullName без каких-либо параметров, он должен вернуть полное имя человека.
+        * Если поля firstName и lastName пусты, метод возвращает пустую строку.
+        * Если lastName является пустой строкой, вернуть firstName.
+        * Если firstName является пустой строкой, вернуть lastName.
+
+Чтобы проверить, является ли String пустым, используйте метод isEmpty из класса String.
+Например, firstName.isEmpty() возвращает true, если строка пуста или другими словами, когда строка не содержит символов.
+
+TEST CODE:
+
+Person person = new Person();
+person.setFirstName("");   // firstName is set to empty string
+person.setLastName("");    // lastName is set to empty string
+person.setAge(10);
+System.out.println("fullName= " + person.getFullName());
+System.out.println("teen= " + person.isTeen());
+person.setFirstName("John");    // firstName is set to John
+person.setAge(18);
+System.out.println("fullName= " + person.getFullName());
+System.out.println("teen= " + person.isTeen());
+person.setLastName("Smith");    // lastName is set to Smith
+System.out.println("fullName= " + person.getFullName());
+
+OUTPUT
+fullName=
+teen= false
+fullName= John
+teen= true
+fullName= John Smith
+
+
+
+================================================================================================
+
+Задание 2.
+
+Компания Carpet попросила вас написать приложение, которое рассчитывает стоимость
+коврового покрытия для прямоугольных помещений. Чтобы рассчитать цену, вы умножаете площадь пола (ширину на длину)
+на цену за квадратный метр ковра. Например, площадь пола длиной 12 метров и шириной 10 метров
+составляет 120 квадратных метров. Покрытие пола ковром стоимостью 8 долларов за квадратный метр обойдется в 960 долларов.
+
+1. Напишите класс с названием Floor. Классу нужны два поля (переменные экземпляра) с именами width и length типа double.
+Класс должен иметь один конструктор с параметрами width и length типа double и инициализировать поля.
+Если параметр ширины меньше 0, ему нужно установить значение поля ширины на 0,
+в случае, если параметр длины меньше 0, ему нужно установить значение поля длины на 0.
+
+Напишите следующие методы (методы экземпляра):
+* Метод с именем getArea без каких-либо параметров, он должен возвращать вычисленную площадь (ширина * длина).
+
+
+2. Напишите класс с именем Carpet. Классу нужно одно поле (переменная экземпляра) с именем cost (стоимость) типа double.
+Класс должен иметь один конструктор с параметром cost типа double и инициализировать поле.
+Если параметр cost меньше 0, необходимо установить значение поля стоимости равным 0.
+
+Напишите следующие методы (методы экземпляра):
+* Метод с именем getCost без каких-либо параметров, он должен возвращать значение поля стоимости
+
+
+3. Напишите класс с именем Calculator. Классу нужны два поля (переменные экземпляра) с именем floor типа Floor и carpet типа Carpet.
+Класс должен иметь один конструктор с параметрами floor типа Floor и carpet типа Carpet и инициализировать поля.
+
+Напишите следующие методы (методы экземпляра):
+* Метод с именем getTotalCost без каких-либо параметров, он должен возвращать рассчитанную общую стоимость покрытия пола ковром.
+
+TEST CODE:
+
+Carpet carpet = new Carpet(3.5);
+Floor floor = new Floor(2.75, 4.0);
+Calculator calculator = new Calculator(floor, carpet);
+System.out.println("total= " + calculator.getTotalCost());
+carpet = new Carpet(1.5);
+floor = new Floor(5.4, 4.5);
+calculator = new Calculator(floor, carpet);
+System.out.println("total= " + calculator.getTotalCost());
+
+→ OUTPUT
+
+total= 38.5
+total= 36.45
