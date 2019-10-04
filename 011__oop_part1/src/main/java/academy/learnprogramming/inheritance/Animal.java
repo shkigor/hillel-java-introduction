@@ -14,6 +14,10 @@ public class Animal {
         System.out.println("Animal.eat() called - " + this.name);
     }
 
+    public void move(int speed) {
+        System.out.println("Animal.move() called. Animal is moving at speed " + speed);
+    }
+
     public String getName() {
         return this.name;
     }
