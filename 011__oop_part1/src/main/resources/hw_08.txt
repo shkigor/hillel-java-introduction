@@ -1,0 +1,35 @@
+ЧИТАЕМ:
+
+Конструкторы в Java - надеюсь эта статья будет не сложной для понимания.
+https://vertex-academy.com/tutorials/ru/konstruktory-slovo-v-java/
+
+Вызов конструктора из конструктора
+https://javarush.ru/groups/posts/793-vihzov-konstruktora-iz-konstruktora
+
+Дополнительная статья о конструкторах (немного сложнее предыдущих двух)
+http://developer.alexanderklimov.ru/android/java/constructor.php
+
+
+СМОТРИМ:
+Memory Fundamentals - part 1 of Java Memory Management
+How java manages memory, explaining the stack and the heap.
+https://www.youtube.com/watch?v=ckYwv4_Qtmo
+
+Values and References - part 2 of Java Memory Management
+How variables are passed into methods, by value or by reference and what this means.
+https://www.youtube.com/watch?v=7IkpIQc8OCw
+
+Видео на английском. Но это лучшее видео о том, где в Java создаются переменные и как они передаются.
+Смотреть обязательно от начала до конца. Все что будет не понятно, разберем на следующем занятии.
+
+
+Задание 1.
+Из второй части видео
+https://www.youtube.com/watch?v=7IkpIQc8OCw
+начиная с 17 минуты и 35 секунды будет показан пример проекта MemoryTest и детально разъяснен в картинках.
+
+Пример кода (видео начиная с 17:35) набрать и запустить у себя. Можно поэкспериментировать с Debug.
+Исходный код прислать в качестве д/з.
+
+
+
