@@ -3,6 +3,9 @@
 Перегрузка методов
 http://www.linkex.ru/java/overloading-methods.php
 
+Блоки инициализации в Java
+https://vertex-academy.com/tutorials/ru/bloki-inicializacii-v-java-chast-1/
+
 Порядок действий при создании объекта
 https://javarush.ru/groups/posts/2137-porjadok-deystviy-pri-sozdanii-obhhekta
 
