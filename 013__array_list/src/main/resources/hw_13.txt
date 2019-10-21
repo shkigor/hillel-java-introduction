@@ -1,5 +1,19 @@
 ЧИТАЕМ:
 
+Структуры данных в картинках. ArrayList
+https://habr.com/ru/post/128269/
+
+Структуры данных в картинках. LinkedList
+https://habr.com/ru/post/127864/
+
+ArrayList vs. LinkedList
+https://javarush.ru/quests/lectures/questsyntax.level08.lecture05
+
+Удаление элемента из списка ArrayList
+https://javarush.ru/groups/posts/1935-udalenie-ehlementa-iz-spiska-arraylist
+
+Списочный массив ArrayList
+http://developer.alexanderklimov.ru/android/java/arraylist.php
 
 
 
