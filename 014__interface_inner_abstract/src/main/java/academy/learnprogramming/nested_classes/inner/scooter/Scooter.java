@@ -1,4 +1,4 @@
-package academy.learnprogramming.nested_classes.inner;
+package academy.learnprogramming.nested_classes.inner.scooter;
 
 public class Scooter {
 
