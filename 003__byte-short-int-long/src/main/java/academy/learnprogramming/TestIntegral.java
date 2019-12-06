@@ -158,6 +158,17 @@ public class TestIntegral {
         long day = 101L;
         System.out.println(night);
         System.out.println(day);
+
+//        long bigLongLiteralValue2 = 2_147_483_647_234; // Error: Integer number too long
+        long bigLongLiteralValue = 2_147_483_647_234L;
+        System.out.println(bigLongLiteralValue);
+
+        // Java automatically promotes each byte, short, or char operand to int when evaluating an expression.
+        // If one operand is a long, float or double the whole expression is promoted to long, float or double respectively.
+        int intMaxValue = 2147483647; //Integer.MAX_VALUE
+        long longValue = 1 + intMaxValue;
+//        long longValue = 1L + intMaxValue;
+        System.out.println(longValue);
     }
 
 }
