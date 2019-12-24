@@ -16,9 +16,9 @@ public class ForLoop {
         }
 
 
-        // РСЃРїРѕР»СЊР·СѓСЏ РѕРїРµСЂР°С‚РѕСЂ for, РІС‹Р·РѕРІРёС‚Рµ РјРµС‚РѕРґ calcInterest СЃ
-        // СЃСѓРјРјРѕР№ 10000 Рё РїСЂРѕС†РµРЅС‚РЅРѕР№ СЃС‚Р°РІРєРѕР№ 2, 3, 4, 5, 6, 7, 8.
-        // Р’С‹РІРµРґРёС‚Рµ СЂРµР·СѓР»СЊС‚Р°С‚ РІ РєРѕРЅСЃРѕР»СЊ.
+        // Используя оператор for, вызовите метод calcInterest с
+        // суммой 10000 и процентной ставкой 2, 3, 4, 5, 6, 7, 8.
+        // Выведите результат в консоль.
 
         for (int i = 2; i < 9; i++) {
             System.out.println("10,000 at " + i + "% interest = " + calculateInterest(10000.0, i));
@@ -29,10 +29,17 @@ public class ForLoop {
         System.out.println("****************");
 
 
-//        РљР°Рє Р±С‹ РІС‹ РёР·РјРµРЅРёР»Рё С†РёРєР» for РІС‹С€Рµ, С‡С‚РѕР±С‹ РІС‹РІРѕРґ РЅР°С‡РёР»СЃСЏ СЃ 8% Рё Р·Р°РІРµСЂС€Р°Р»СЃСЏ 2%
+//        Как бы вы изменили цикл for выше, чтобы вывод начился с 8% и завершался 2%
 
 
         for (int i = 8; i >= 2; i--) {
+            System.out.println("10,000 at " + i + "% interest = " + String.format("%.2f", calculateInterest(10000.0, i)));
+        }
+
+        System.out.println("WHILE LOOP");
+        int i = 2;
+        while (i < 9) {
+            i++;
             System.out.println("10,000 at " + i + "% interest = " + String.format("%.2f", calculateInterest(10000.0, i)));
         }
 
@@ -40,11 +47,11 @@ public class ForLoop {
 
 
     /**
-     * РњРµС‚РѕРґ РІС‹С‡РёСЃР»РµРЅРёСЏ СЃСѓРјРјС‹ РґРѕС…РѕРґР° (РЅР°С‡РёСЃР»РµРЅРЅС‹С… РїСЂРѕС†РµРЅС‚РѕРІ)
+     * Метод вычисления суммы дохода (начисленных процентов)
      *
-     * @param amount       СЃСѓРјРјР°
-     * @param interestRate РїСЂРѕС†РµРЅС‚РЅР°СЏ СЃС‚Р°РІРєР°
-     * @return СЃСѓРјРјР° РґРѕС…РѕРґР° (РІС‹РїР»Р°С‡РµРЅРЅС‹С… РїСЂРѕС†РµРЅС‚РѕРІ)
+     * @param amount       сумма
+     * @param interestRate процентная ставка
+     * @return сумма дохода (выплаченных процентов)
      */
     public static double calculateInterest(double amount, double interestRate) {
         return (amount * (interestRate / 100));
