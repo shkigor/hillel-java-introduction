@@ -23,6 +23,8 @@ public class Main {
             System.out.println("Element " + i + ", typed value was " + myIntegers[i]);
         }
         System.out.println("The average is " + getAverage(myIntegers));
+        System.out.println("Sort array");
+        selectionSort();
 
     }
 
@@ -51,5 +53,27 @@ public class Main {
 
         return (double) sum / array.length;
 
+    }
+
+    public static void selectionSort() {
+        int[] a = new int[] {1, 4, 2, 5, 5, -1, 7, 2, 9, 0};
+        printArray(a);
+        for (int i = 0; i < a.length; i++) {
+            int minValue = a[i];
+            int minIndex = i;
+            for (int j = i + 1; j < a.length; j++) {
+                if (a[j] < minValue) {
+                    minValue = a[j];
+                    minIndex = j;
+                }
+            }
+            if (minIndex != i) {
+                int temp = a[i];
+                a[i] = minValue;
+                a[minIndex] = temp;
+            }
+        }
+        System.out.println();
+        printArray(a);
     }
 }

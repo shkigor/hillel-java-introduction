@@ -3,23 +3,23 @@ package academy.learnprogramming.todo;
 public class MainToDo {
 
     public static void main(String[] args) {
-        Person igor = new Person("РРіРѕСЂСЊ");
-        igor.addToDoCatalog("Р”РѕРј");
-        igor.addToDoCatalog("Р Р°Р±РѕС‚Р°");
+        Person igor = new Person("Игорь");
+        igor.addToDoCatalog("Дом");
+        igor.addToDoCatalog("Работа");
 
-        igor.addTask("Р”РѕРј", "РљСѓРїРёС‚СЊ РІРµРЅРёРє");
-        igor.addTask("Р”РѕРј",  "РљСѓРїРёС‚СЊ РІРµРЅРёРє");
-        igor.addTask("Р”РѕРј1",  "РљСѓРїРёС‚СЊ РІРµРЅРёРє");
-        igor.addTask("Р”РѕРј", "РџРѕРјС‹С‚СЊ РїРѕСЃСѓРґСѓ");
-        igor.addTask("Р”РѕРј", "РћРїР»Р°С‚РёС‚СЊ РєРѕРјСѓРЅР°Р»РєСѓ");
+        igor.addTask("Дом", "Купить веник");
+        igor.addTask("Дом",  "Купить веник");
+        igor.addTask("Дом1",  "Купить веник");
+        igor.addTask("Дом", "Помыть посуду");
+        igor.addTask("Дом", "Оплатить комуналку");
 
-        igor.addTask("Р—Р°РїРёСЃР°С‚СЊСЃСЏ РЅР° РєСѓСЂСЃ");
+        igor.addTask("Записаться на курс");
 
-        System.out.println("\n*** " + igor.getName() + " - СЃРїРёСЃРѕРє Р·Р°РґР°С‡: ***");
-        igor.printTasks("Р”РѕРј");
-        igor.printTasks("Р Р°Р±РѕС‚Р°");
+        System.out.println("\n*** " + igor.getName() + " - список задач: ***");
+        igor.printTasks("Дом");
+        igor.printTasks("Работа");
 
-        System.out.println("\n*** " + igor.getName() + " - СЃРїРёСЃРѕРє Р’РЎР•РҐ Р·Р°РґР°С‡: ***");
+        System.out.println("\n*** " + igor.getName() + " - список ВСЕХ задач: ***");
         igor.printTasks();
 
     }
