@@ -8,7 +8,7 @@ class Movie {
     }
 
     public String plot() {
-        return "Р—РґРµСЃСЊ СЃСЋР¶РµС‚Р° РЅРµС‚";
+        return "Здесь сюжета нет";
     }
 
     public String getName() {
@@ -18,52 +18,52 @@ class Movie {
 
 class Jaws extends Movie {
     public Jaws() {
-        super("Р§РµР»СЋСЃС‚Рё");
+        super("Челюсти");
     }
 
     public String plot() {
-        return "РђРєСѓР»Р° РµСЃС‚ РјРЅРѕРіРѕ Р»СЋРґРµР№";
+        return "Акула ест много людей";
     }
 }
 
 class IndependenceDay extends Movie {
 
     public IndependenceDay() {
-        super("Р”РµРЅСЊ РЅРµР·Р°РІРёСЃРёРјРѕСЃС‚Рё");
+        super("День независимости");
     }
 
     @Override
     public String plot() {
-        return "РРЅРѕРїР»Р°РЅРµС‚СЏРЅРµ РїС‹С‚Р°СЋС‚СЃСЏ Р·Р°С…РІР°С‚РёС‚СЊ РїР»Р°РЅРµС‚Сѓ Р—РµРјР»СЏ";
+        return "Инопланетяне пытаются захватить планету Земля";
     }
 }
 
 class MazeRunner extends Movie {
 
     public MazeRunner() {
-        super("Р‘РµРіСѓС‰РёР№ РІ Р»Р°Р±РёСЂРёРЅС‚Рµ");
+        super("Бегущий в лабиринте");
     }
 
     @Override
     public String plot() {
-        return "Р”РµС‚Рё РїС‹С‚Р°СЋС‚СЃСЏ РёР·Р±РµР¶Р°С‚СЊ Р»Р°Р±РёСЂРёРЅС‚Р°";
+        return "Дети пытаются избежать лабиринта";
     }
 }
 
 class StarWars extends Movie {
     public StarWars() {
-        super("Р—РІРµР·РґРЅС‹Рµ РІРѕР№РЅС‹");
+        super("Звездные войны");
     }
 
     @Override
     public String plot() {
-        return "РРјРїРµСЂСЃРєРёРµ СЃРёР»С‹ РїС‹С‚Р°СЋС‚СЃСЏ Р·Р°С…РІР°С‚РёС‚СЊ РІСЃРµР»РµРЅРЅСѓСЋ";
+        return "Имперские силы пытаются захватить вселенную";
     }
 }
 
 class Forgetable extends Movie {
     public Forgetable() {
-        super("Р·Р°Р±С‹РІР°РµРјС‹Р№");
+        super("забываемый");
     }
 
     // No plot method
