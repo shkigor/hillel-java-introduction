@@ -1,6 +1,8 @@
 package academy.learnprogramming.polymorphism.dancer;
 
-public class ElectricDancer extends Dancer {
+import academy.learnprogramming.polymorphism.flowers.IDancer;
+
+public class ElectricDancer extends Dancer implements IDancer {
 
     public ElectricDancer(String name, int age) {
         super(name, age);

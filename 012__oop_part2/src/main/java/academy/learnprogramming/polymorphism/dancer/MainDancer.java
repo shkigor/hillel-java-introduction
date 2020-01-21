@@ -1,18 +1,20 @@
 package academy.learnprogramming.polymorphism.dancer;
 
+import academy.learnprogramming.polymorphism.flowers.IDancer;
+
 public class MainDancer {
 
     public static void main(String[] args) {
-        Dancer[] dancers = new Dancer[20];
+        IDancer[] dancers = new IDancer[20];
         for (int i = 0; i < dancers.length; i++) {
             dancers[i] = getRandomDancer();
         }
-        for (Dancer dancer: dancers ) {
+        for (IDancer dancer: dancers ) {
             dancer.dance();
         }
     }
 
-    static Dancer getRandomDancer() {
+    static IDancer getRandomDancer() {
         int rand = (int) (Math.random() * 3) + 1;
         switch (rand) {
             case 1:

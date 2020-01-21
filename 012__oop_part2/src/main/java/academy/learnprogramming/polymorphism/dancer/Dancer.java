@@ -1,6 +1,8 @@
 package academy.learnprogramming.polymorphism.dancer;
 
-public class Dancer {
+import academy.learnprogramming.polymorphism.flowers.IDancer;
+
+public class Dancer implements IDancer {
     String name;
     int age;
 
